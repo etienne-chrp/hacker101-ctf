@@ -9,10 +9,6 @@ python
 if cur.execute('SELECT password FROM admins WHERE username=\'%s\'' % request.form['username'].replace('%', '%%')) == 0:
 ```
 
-Inject password
-
-`' UNION SELECT 'test' -- `
-
 ## FLAGS
 
 ### #1
@@ -28,3 +24,11 @@ With the following we can find the length of the field `' OR LENGTH(password)=8;
 #### Fields content
 
 Via Frontend testing framework (Selenium) we can use the following SQL syntax to guess the username and password `' OR password LIKE BINARY '________'`. By knowing the length and using the MySQL wildcard character `_` we can make a dictionarry attack character per character.
+
+#### Flag
+
+Once you have both login and password you can fill up the fields and you will receive the flag.
+
+### #2
+
+In username field you can inject a password via `' UNION SELECT 'test' -- `. Then you can use the injectetd password in the password field. Onec logged in you can access the page number 3 wich contains the flag.
