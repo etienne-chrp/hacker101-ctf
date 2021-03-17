@@ -1,4 +1,4 @@
-﻿using OpenQA.Selenium;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
 
@@ -29,8 +29,10 @@ namespace micro_cms_v2
             var options = new ChromeOptions();
             options.AddArgument("--start-maximized");
             options.AddArgument("--disable-notifications");
+            options.AddArgument("--no-sandbox");
 
-            var driver = new ChromeDriver(options);
+            var driverService = ChromeDriverService.CreateDefaultService("/snap/bin", "chromium.chromedriver");
+            var driver = new ChromeDriver(driverService, options);
             return driver;
         }
     }
