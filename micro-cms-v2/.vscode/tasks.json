@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/micro-cms-v2/micro-cms-v2.csproj",
+                "${workspaceFolder}/micro-cms-v2.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/micro-cms-v2/micro-cms-v2.csproj",
+                "${workspaceFolder}/micro-cms-v2.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -32,7 +32,7 @@
             "args": [
                 "watch",
                 "run",
-                "${workspaceFolder}/micro-cms-v2/micro-cms-v2.csproj",
+                "${workspaceFolder}/micro-cms-v2.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],

@@ -13,9 +13,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             "OS-COMMENT4": "If you have changed target frameworks, make sure to update the program path.",
-            "program": "${workspaceFolder}/micro-cms-v2/bin/Debug/netcoreapp3.1/micro-cms-v2.dll",
+            "program": "${workspaceFolder}/bin/Debug/netcoreapp3.1/micro-cms-v2.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/micro-cms-v2",
+            "cwd": "${workspaceFolder}",
             "OS-COMMENT5": "For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console",
             "console": "internalConsole",
             "stopAtEntry": false
